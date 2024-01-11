@@ -1,1 +1,4 @@
-/GitHubProj
+/.mvn
+/.vscode
+/target
+
