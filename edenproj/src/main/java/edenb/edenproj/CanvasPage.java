@@ -67,7 +67,7 @@ public class CanvasPage extends VerticalLayout {
                         Point p = new Point(event.getOffsetX(), event.getOffsetY(), userName, colorState);
                         ctx.moveTo(event.getOffsetX(), event.getOffsetY());
                         drawService.startDraw(p);
-                        ctx.fillRect(p.getX(), p.getY(), 2, 2);
+                      //  ctx.fillRect(p.getX(), p.getY(), 2, 2);
         });
 
         canvas.addMouseMoveListener(event -> {                    
@@ -102,7 +102,7 @@ public class CanvasPage extends VerticalLayout {
             @Override
             public void onChange() 
             {
-                System.out.println("\n>>>>>> CanvasChangeListener: " + userName +"\n");
+                //System.out.println("\n>>>>>> CanvasChangeListener: " + userName +"\n");
                 UI ui = getUI().orElseThrow();
                 ui.access(() -> refreshCanvas());
         }

@@ -59,7 +59,6 @@ public class PointService {
       }
     }
 
-
     public void clearPoints() 
     {
         drawRepo.deleteAll();
@@ -82,12 +81,4 @@ public class PointService {
     // public ArrayList<CanvasChangeListener> getListeners() {
     //     return listeners;
     // }
-
-  
-
-    //public void sendDrawingPoint(double x, double y) {
-        // כאשר משתמש מצייר, שלח את הנקודה לשרת
-       
-    //}
-
 }
